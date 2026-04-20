@@ -7,6 +7,7 @@ __pycache__/
 # Downloaded files — too large for git
 COLLECTION/
 aatmanova/
+notebook-lm-ready/
 
 # Auto-generated manifest and state files
 gdown_full_list.txt
@@ -16,3 +17,7 @@ gdown_full_list.backup_*.txt
 # OS files
 .DS_Store
 Thumbs.db
+
+*.zip
+*.7z
+

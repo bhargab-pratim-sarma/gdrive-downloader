@@ -32,8 +32,8 @@ SUPPORTED_MEDIA = {
 
 # Toggles for what to copy into the ready folder
 COPY_DOCS = True
-COPY_IMAGES = False
-COPY_MEDIA = False  # Keep false to rely purely on the text transcripts
+COPY_IMAGES = True
+COPY_MEDIA = True  # Enable media since NotebookLM now supports audio/video ingestion
 
 # Irrelevant files to ignore
 IGNORE_FILENAMES = {

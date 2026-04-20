@@ -1,0 +1,18 @@
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Downloaded files — too large for git
+COLLECTION/
+aatmanova/
+
+# Auto-generated manifest and state files
+gdown_full_list.txt
+gdown_full_list.backup_*.txt
+.gdrive_state.json
+
+# OS files
+.DS_Store
+Thumbs.db

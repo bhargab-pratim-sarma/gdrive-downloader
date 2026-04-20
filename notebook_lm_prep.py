@@ -52,7 +52,7 @@ IGNORE_FILENAMES = {
     "get more books & magazines.....txt"
 }
 
-IGNORE_PREFIXES = ("get bonus", "bonus resources", "downloaded from")
+IGNORE_PREFIXES = ("get bonus", "bonus resources", "downloaded from", "~get your files here")
 IGNORE_EXTENSIONS = {".url", ".part"}
 
 # Colors for terminal output
@@ -211,6 +211,11 @@ def main():
     if not SOURCE_DIR.exists():
         print(clr(f"❌ Source directory not found: {SOURCE_DIR}", C.RED))
         return
+        
+    # Clean output directory if it exists to remove stale duplicates
+    if OUTPUT_DIR.exists():
+        print(clr(f"🧹 Cleaning output directory: {OUTPUT_DIR}", C.YELLOW))
+        shutil.rmtree(OUTPUT_DIR)
         
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     
